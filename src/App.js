@@ -1,10 +1,12 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+
+import history from './history';
 
 // You can think of these components as "pages"
 // in your app.
@@ -35,7 +37,7 @@ function Dashboard() {
 
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <div>
         <ul>
           <li>
