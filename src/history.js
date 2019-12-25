@@ -5,6 +5,8 @@ ReactGA.initialize('UA-154998375-1');
 
 const history = createHistory();
 
+console.log('init');
+
 // Listen for changes to the current location
 history.listen((location, action) => {
   // location is an object like window.location
